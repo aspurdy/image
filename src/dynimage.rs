@@ -31,7 +31,7 @@ use io::free_functions;
 use imageops;
 
 /// A Dynamic Image
-#[derive(Clone)]
+#[derive(Debug, Clone)]
 pub enum DynamicImage {
     /// Each pixel in this image is 8-bit Luma
     ImageLuma8(GrayImage),
